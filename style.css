@@ -1,0 +1,39 @@
+:root {
+  --bg-color: #000;
+  --txt-color: #ffffd9;
+  --link-color: #d09f50;
+  --link-hover-color: #fff;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--txt-color);
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: var(--link-hover-color);
+  text-shadow: 1px 0 currentColor;
+  text-decoration: underline;
+}
+
+/**
+ * HOME
+ */
+
+.layout-home {
+  max-width: 30rem;
+  margin: auto;
+}
+
+.layout-home h2 {
+  margin-top: 4rem;
+}
