@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Dark Earth - Venice</title>
+  <meta charset="utf-8">
+  <meta name="viewport"content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+</head>
+<body class="layout-map">
+  <a class="back" href="index.html">❮ Retour</a>
+  <div id="map"></div>
+  <script>
+    var tileUrl = 'venice/{z}/{x}/{y}.png',
+      map = L.map('map', {
+        maxZoom: 5
+      });
+
+    L.tileLayer(tileUrl, {tms: true}).addTo(map);
+    map.setView([-65, -45], 3);
+    map.zoomControl.setPosition('topright');
+  </script>
+</body>
+</html>

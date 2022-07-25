@@ -37,3 +37,32 @@ a:hover, a:focus {
 .layout-home h2 {
   margin-top: 4rem;
 }
+
+/**
+ * MAP
+ */
+
+.layout-map,
+.layout-map * {
+  margin: 0;
+  padding: 0;
+}
+
+.layout-map .back {
+  display: block;
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.layout-map #map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.layout-map .leaflet-container {
+  background-color: var(--bg-color);
+}
